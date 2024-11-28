@@ -14,9 +14,11 @@ import torch
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "../../"))
 
-DATA_PATH = os.path.join(PROJECT_ROOT, "src/gcloud/fine_tune_dataset.json")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "src/transformers/fine_tuned_model")
-MODEL_NAME = "t5-small"  # You can choose a different model, e.g., "t5-base"
+DATA_PATH = os.path.join(PROJECT_ROOT, "src/gcloud/fine_tune_sentence_completion.json")
+OUTPUT_DIR = os.path.join(
+    PROJECT_ROOT, "src/transformers/fine_tuned_model_sentence_completion"
+)
+MODEL_NAME = "t5-small"
 
 
 def load_data(data_path):
