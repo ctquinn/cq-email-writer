@@ -162,3 +162,7 @@ cython_debug/
 #.idea/
 
 credentials.json
+sent_emails.json
+threads.json
+*dataset.json
+*.pickle
