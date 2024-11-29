@@ -171,3 +171,5 @@ threads.json
 # Transformers models and checkpoints
 src/transformers/fine_tuned_model
 src/transformers/fine_tuned_model_sentence_completion
+
+allfiles.txt

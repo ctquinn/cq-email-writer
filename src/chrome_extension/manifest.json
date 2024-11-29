@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Auto-Complete",
+    "description": "Suggests email completions in your voice.",
+    "version": "1.0",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://mail.google.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "static/icon.png",
+      "48": "static/icon.png",
+      "128": "static/icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "static/icon.png"
+    }
+  }
+  
