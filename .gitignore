@@ -166,6 +166,8 @@ credentials.json
 sent_emails.json
 threads.json
 *dataset.json
+*dataset_fixed.json
+*completion.json
 *.pickle
 
 # Transformers models and checkpoints
