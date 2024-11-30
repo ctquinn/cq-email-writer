@@ -12,7 +12,9 @@ CORS(app)  # Enable CORS for all routes
 # Load the model
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "../../.."))
-MODEL_PATH = os.path.join(PROJECT_ROOT, "src/transformers/fine_tuned_model")
+MODEL_PATH = os.path.join(
+    PROJECT_ROOT, "src/transformers/fine_tuned_model_email_writer"
+)
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_PATH)
